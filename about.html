@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es-co">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mí</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__menu">
+            <a class="header__menu__link" href="Index.html">Home</a>
+            <a class="header__menu__link" href="about.html">Sobre mí</a>
+        </nav>
+    </header>
+    <main class="presentacion">
+        <section class="presentacion__contenido">
+            <h1 class="presentacion__contenido__titulo">Sobre mí</h1>
+            <p class="presentacion__contenido__texto">Un apasionado desarrollador de videojuegos, se sumerge
+                en el mundo de la programación con conocimientos en HTML, CSS y JavaScript. Su pasión por los
+                videojuegos es también su pasatiempo favorito. Generando experiencias inmersivas para los
+                jugadores, combinando su habilidad para codificar con su amor por los mundos virtuales.
+            </p>
+            <div class="presentacion__enlaces">
+                <h2 class="presentacion__enlaces__subtitulo"></h2>
+                <p id="textoJuego" class="presentacion__contenido__texto"></p>         
+                <input type="number" id="valorUsuario" min="1" max="10" class="container__input">
+                    <button onclick="VerificarIntento();" class="container__boton">Intentar</button>
+                    <button onclick="reiniciarJuego();" class="container__boton" id="reiniciar" disabled >Nuevo juego</button>
+            </div>
+            
+        </section>
+        <img class="presentacion__imagen" src="./assets/Imagen.png" alt="foto de perfil">
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por William Aranguren</p>
+    </footer>
+    <script src="app.js" defer=""></script>
+</body>
+</html>
